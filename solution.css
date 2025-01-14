@@ -1,0 +1,23 @@
+The solution involves using the `!important` flag or reorganizing the selectors to change specificity. The solution using `!important` is shown below.  While functional, it's generally better practice to avoid `!important` and restructure selectors. In this example, moving the general `p` selector after the more specific one resolves the issue by ensuring the general style is applied. 
+
+```css
+p {
+  color: blue;
+}
+
+.container p {
+  color: red !important;
+}
+```
+
+Alternative solution (preferred):
+
+```css
+.container p {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+```

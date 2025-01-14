@@ -1,0 +1,1 @@
+The following CSS code snippet demonstrates an issue where the specificity of selectors leads to unexpected results. The intention is to style paragraphs within the 'container' div differently than those outside. However, due to the higher specificity of the 'container p' selector, it overrides the general 'p' selector, leading to unexpected styling.
